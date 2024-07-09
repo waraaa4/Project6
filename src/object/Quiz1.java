@@ -15,16 +15,16 @@ public class Quiz1 {
 	public static void main(String[] args) {
 		
 		Student student1 = new Student("둘리", 5000);
-		Student student2 = new Student("도우너", 10000);
 		Bus bus100 = new Bus(100);
-		Subway subway2 = new Subway("2");
-		
 		student1.takeBus(bus100);
-		student2.takeSubway(subway2);
-		
 		student1.showInfo();
-		student2.showInfo();
 		bus100.showInfo();
+		
+		
+		Student student2 = new Student("도우너", 10000);
+		Subway subway2 = new Subway("2");
+		student2.takeSubway(subway2);
+		student2.showInfo();
 		subway2.showInfo();
 
 	}
